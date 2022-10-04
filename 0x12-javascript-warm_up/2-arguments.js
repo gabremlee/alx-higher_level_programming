@@ -1,13 +1,13 @@
 #!/usr/bin/node
 
-import { argv } from 'node:process';
+const  { argv } = require('node:process');
 let count = 0;
 argv.forEach((val) => {
 	count++;
-)};
-if (c > 1) {
+});
+if (count > 3) {
 	console.log("Arguments found");
-} else if (c == 1) {
+} else if (count == 3) {
 	console.log("Argument found")
 } else {
 	console.log("No argument");
