@@ -4,12 +4,13 @@ const Rectangle = require('./4-rectangle.js');
 class Square extends Rectangle {
   constructor (size) {
     super(size);
-    this.size = size;
+    this.width = size;
+    this.height = size;
   }
 
   print () {
-    for (let i = 0; i < this.size; i++) {
-      for (let j = 0; j < this.size; j++) {
+    for (let i = 0; i < this.height; i++) {
+      for (let j = 0; j < this.width; j++) {
         process.stdout.write('X');
       }
       console.log('');
@@ -17,7 +18,8 @@ class Square extends Rectangle {
   }
 
   double () {
-    this.size *= 2;
+    this.width *= 2;
+    this.height *= 2;
   }
 }
 
