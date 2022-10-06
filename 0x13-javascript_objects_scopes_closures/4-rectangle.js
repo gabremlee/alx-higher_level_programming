@@ -17,23 +17,14 @@ class Rectangle {
   }
 
   rotate () {
-    for (let i = 0; i < this.width; i++) {
-      for (let j = 0; j < this.height; j++) {
-        process.stdout.write('X');
-      }
-      console.log('');
-    }
+    const a = this.width;
+    this.width = this.height;
+    this.height = a;
   }
 
   double () {
     this.height *= 2;
     this.width *= 2;
-    for (let i = 0; i < this.height; i++) {
-      for (let j = 0; j < this.width; j++) {
-        process.stdout.write('X');
-      }
-      console.log('');
-    }
   }
 }
 
