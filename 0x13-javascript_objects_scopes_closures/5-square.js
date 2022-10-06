@@ -8,8 +8,8 @@ class Square extends Rectangle {
   }
 
   print () {
-    for (let i = 0; i < this.width; i++) {
-      for (let j = 0; j < this.width; j++) {
+    for (let i = 0; i < this.size; i++) {
+      for (let j = 0; j < this.size; j++) {
         process.stdout.write('X');
       }
       console.log('');
@@ -17,7 +17,7 @@ class Square extends Rectangle {
   }
 
   double () {
-    this.width *= 2;
+    this.size *= 2;
   }
 }
 
